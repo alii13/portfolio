@@ -1,5 +1,9 @@
 import React,{useEffect,useRef} from 'react';
-import gsap,{Power1} from 'gsap';
+import gsap from 'gsap';
+import {GiClockwork} from 'react-icons/gi';
+import {SiWebpack,SiMaterialdesignicons,SiKubernetes} from "react-icons/si";
+import {CgIfDesign} from "react-icons/cg"
+
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 function About() {
@@ -39,19 +43,19 @@ function About() {
         <div ref={el=>{about=el}}>
         <div className="container-fluid about wrapperx">
         <div className="panel-ab ">
-            <h1 className="about-text">WE <span className="text-danger">DO</span></h1>
+            <h1 className="about-text">WE <span className="text-danger">DO</span> <GiClockwork className="work-icons"/></h1>
             </div>
             <div className="panel-ab sl-1">
-            <h1 className="about-text"><span className="text-danger">Web</span>Dev </h1>
+            <h1 className="about-text"><span className="text-danger">Web</span>Dev <SiWebpack className="beat bl"/></h1>
             </div>
             <div className="panel-ab sl-2">
-            <h1 className="about-text">UX <span className="text-danger">Design</span></h1>
+            <h1 className="about-text">UX <span className="text-danger">Design</span> <SiMaterialdesignicons className="beat text-danger"/></h1>
             </div>
             <div className="panel-ab sl-3">
-            <h1 className="about-text"><span className="text-danger">UI </span>Design</h1>
+            <h1 className="about-text"><span className="text-danger">UI </span>Design <CgIfDesign className="beat"/></h1>
             </div>
             <div className="panel-ab sl-4">
-            <h1 className="about-text">BACKEND <span className="text-danger">Dev</span></h1>
+            <h1 className="about-text">BACKEND <span className="text-danger">Dev</span> <SiKubernetes className="work-icons bl"/></h1>
             </div>
 
         </div>

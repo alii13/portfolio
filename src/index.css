@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
   overflow-x: hidden;
 }
@@ -15,6 +18,16 @@ h1,h2,h4 {
 
   background-color: rgb(48, 60, 85);
 
+}
+.is-current{
+  color: red;
+}
+.nav-list li a{
+  color: black;
+  text-decoration: none;
+}
+.nav-list li a:hover{
+  color: red;
 }
 .project-heading::after {
   content: "";
@@ -107,6 +120,26 @@ h1,h2,h4 {
   transition-property:background;
   transition-duration: 0.3s;
 }
+.work-icons{
+  font-size: 8vw;
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+.beat{
+  font-size: 8vw;
+  animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+.bl{
+  color: #007bff;
+}
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
+
 .wrapper-img:hover::before {
   content: "";
   position: absolute;
@@ -179,8 +212,9 @@ hr {
   padding-left: 0;
 }
 .nav-list li{
-  font-weight: 600 !important;
-  font-family: 'Lato', sans-serif;
+  font-weight: 100 !important;
+  font-size: 1.1em;
+  font-family: 'Anton', sans-serif;
 }
 h3{
   font-family: 'Anton', sans-serif;
@@ -460,6 +494,9 @@ padding:0.5em 1.2em 0.5em 1.2em;
     font-size: 14px;
 
 }
+.ct2{
+  color: red;;
+}
 .list li{
   text-align:left;
   z-index: -1;
@@ -539,6 +576,7 @@ padding:0.5em 1.2em 0.5em 1.2em;
   border-radius: 6px;
   border: 1px solid red;;
   position: relative;
+  overflow: hidden;
 }
 
 .big-wrapper{

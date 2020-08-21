@@ -42,7 +42,7 @@ function Hero() {
         const splittedText = new SplitTextJS(bigTitle);
         const textWords = splittedText.words;
         const textOriginal = splittedText.originalText;
-        console.log(textWords)
+      //  console.log(textWords)
         t2
         .from(textWords, {duration: 0.6,
             delay:1, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.07})
@@ -71,7 +71,7 @@ function Hero() {
 
     },[])
     return (
-        <div>
+        <div id="home">
             <div ref={(el)=>{overlay=el}} className="overlay">
                 <div className="child-1 item"></div>
                 <div className="child-2 item"></div>

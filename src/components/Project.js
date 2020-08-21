@@ -1,6 +1,6 @@
 import React,{useRef,useEffect} from 'react'
 import Cards from "./cards";
-import gsap from "gsap";
+import gsap,{Power2} from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { Container,Row,Col,Card,Button } from 'react-bootstrap';
 function Project() {
@@ -39,18 +39,20 @@ function Project() {
         const z1= gsap.timeline();
         z1.from(".cd",{
             duration:0.4,
-            stagger:0.1,
+            stagger:0.15,
+            ease:Power2.easeInOut,
             y:100,
             autoAlpha:0,
             scrollTrigger:{
                 trigger:".project-section",
-                scrub:true
+                end:"top+=10% top",
+                scrub:true,
             }
         })
     })
 
     return (
-        <div  className="project-section">
+        <div  className="project-section" id="project">
            
         <Container  className="project ">
         <div className="project-heading text-left"><h3 className="basic-heading">Projects !</h3></div>

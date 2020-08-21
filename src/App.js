@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <Hero/>
       <Nav/>
+      <Work/>
       <Project/>
       <Ourskills/>
       <Aboutus/>

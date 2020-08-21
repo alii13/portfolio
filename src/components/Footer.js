@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <Container>
-                <p className="text-muted"> Desgin with <span className="text-danger"><AiFillHeart/></span> by Ali</p>
+                <p className="text-muted"> Made with <span className="text-danger"><AiFillHeart/></span> by Ali</p>
 
             </Container>
         </footer>

@@ -1,6 +1,7 @@
 import React,{useEffect,useRef} from 'react'
 import gsap,{Power3,Power4} from "gsap";
 
+
 function Nav() {
     let topDistanc= useRef(null);
     // 
@@ -29,11 +30,11 @@ function Nav() {
     return (
         <div className="nav d-none d-md-flex">
             <ul ref= {(el)=>{topDistanc=el}} className="nav-list">
-                <li className="child-11 butt">Our Skills</li>
-                <li className="child-12">Projects</li>
-                <li className="child-13">Home</li>
-                <li className="child-14">About Us</li>
-                <li className="child-15">Contact Us</li>
+                <li className="child-11 butt"><a href="#skills">Our Skills </a></li>
+                <li className="child-12"><a href="#project">Projects </a></li>
+                <li className="child-13"><a href="#home">Home </a></li>
+                <li className="child-14"><a href="#aboutus">About Us </a></li>
+                <li className="child-15"><a href="#contactus">Contact Us </a></li>
 
             </ul>
         
