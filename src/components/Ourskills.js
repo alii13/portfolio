@@ -68,12 +68,10 @@ React.useEffect(() => {
         z2
         .from(".left",{
             ease:"none",
-            xPercent:-30,
+            xPercent:-20,
             autoAlpha:0,
             scrollTrigger:{
                 trigger:".trigger1",
-                end:"center-=20% top",
-                scrub:true,
             },
             stagger:0.2
         })
@@ -84,7 +82,7 @@ React.useEffect(() => {
                 scrub:true,
             },
             rotate:450,
-            stagger:0.2
+            stagger:0.1
 
         },"0")
         .from(".timeline-ic",{
@@ -92,22 +90,21 @@ React.useEffect(() => {
             scrollTrigger:{
                 trigger:".trigger1",
                 scrub:true,
+                
             },
             rotate:720,
-            stagger:0.2
+            stagger:0.1
 
         },"0")
         .from(".right",{
             ease:"none",
-            xPercent:35,
+            xPercent:20,
             autoAlpha:0,
             scrollTrigger:{
                 trigger:".trigger1",
-                end:"center-=20% top",
-                scrub:true,
             },
             stagger:0.2
-        },"0.5")
+        },"0.3")
 
     }
     })
@@ -123,7 +120,7 @@ React.useEffect(() => {
                     <div class="main-timeline">
                         <a href="#" class="timeline">
                             <div class="timeline-icon left"><GrGatsbyjs className="timeline-ic violet"/></div>
-                            <div class="timeline-content right">
+                            <div class="timeline-content right rrm">
                                 <h3 class="title">Web Designer</h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
@@ -131,7 +128,7 @@ React.useEffect(() => {
                             </div>
                         </a>
                         <a href="#" class="timeline">
-                            <div class="timeline-icon right"><FaReact className="timeline-ic"/></div>
+                            <div class="timeline-icon right "><FaReact className="timeline-ic"/></div>
                             <div class="timeline-content left">
                                 <h3 class="title">Web Developer</h3>
                                 <p class="description">
@@ -141,7 +138,7 @@ React.useEffect(() => {
                         </a>
                         <a href="#" class="timeline">
                             <div class="timeline-icon left">< SiKubernetes className="timeline-ic"/></div>
-                            <div class="timeline-content right">
+                            <div class="timeline-content right rr">
                                 <h3 class="title">Web Designer</h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
@@ -149,7 +146,7 @@ React.useEffect(() => {
                             </div>
                         </a>
                         <a href="#" class="timeline">
-                            <div class="timeline-icon right">< DiJavascript className="timeline-ic text-warning"/></div>
+                            <div class="timeline-icon right ">< DiJavascript className="timeline-ic text-warning"/></div>
                             <div class="timeline-content left">
                                 <h3 class="title">Web Developer</h3>
                                 <p class="description">

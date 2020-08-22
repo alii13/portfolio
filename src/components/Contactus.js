@@ -7,7 +7,7 @@ function Contactus() {
         z4
         .from(".ct-1",{
             ease:"none",
-            xPercent:-40,
+            xPercent:-35,
             autoAlpha:0,
             scrollTrigger:{
                 trigger:".trigger4",
