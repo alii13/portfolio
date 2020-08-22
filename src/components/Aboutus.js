@@ -9,7 +9,16 @@ function Aboutus() {
     let p7=useRef(null)
     let p5=useRef(null)
     let p6=useRef(null)
+    const [width, setWidth] = React.useState(window.innerWidth);
+    //const [data, setData] = React.useState(true);
+React.useEffect(() => {
+   const handleWindowResize = () => setWidth(window.innerWidth);
+   window.addEventListener("resize", handleWindowResize);
+   return () => window.removeEventListener("resize", handleWindowResize);
+ }, []);
     useEffect(()=>{
+        if(width>476){
+        
         //p1
         gsap.set(p1, {perspective: 400});
         const splittedTextp1 = new SplitTextJS(p1);
@@ -77,6 +86,21 @@ function Aboutus() {
                  end:"end+=100% top",
              },
               rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.07},"+=2")
+            }else{
+                const z3=gsap.timeline();
+                z3
+                .from(".ov",{
+                    scale:1.5,
+                    ease:"none",
+                    duration:0.5,
+                    scrollTrigger:{
+                        trigger:".trigger2",
+                        scrub:-0.5,
+                        end:"center top",
+                    }
+                },"0")
+
+            }
     },[])
     return (
         <div className="project-section trigger2" id="aboutus">

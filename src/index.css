@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+ 
 }
 body{
   overflow-x: hidden;
@@ -8,6 +9,9 @@ h1,h2,h4 {
   margin: 0;
  font-family: 'Anton', sans-serif;
 
+}
+#skills{
+  overflow-x: hidden;
 }
 .project-heading{
   position: relative;
@@ -100,7 +104,8 @@ h1,h2,h4 {
 }
 */
 .child-1,.child-2,.child-3,.child-4,.child-5,.child-6{
-  background-color: black;
+  background-color: rgb(21, 21, 19);;
+  z-index: 1004;
 
 }
 .wrapper{
@@ -411,7 +416,6 @@ padding:0.5em 1.2em 0.5em 1.2em;
 }
 .mobile-nav{
   position: sticky;
-  z-index:1000 !important;
   top: 0%;
   height: 7vh;
   align-items: center;
@@ -423,8 +427,8 @@ padding:0.5em 1.2em 0.5em 1.2em;
   padding-left: 0;
   width: 100%;
 }
-.item a{
-  color: white;
+.item .fd{
+  color: rgb(21, 21, 19);
   font-family: 'Anton', sans-serif;
   /*#61dafb*/
 
@@ -433,11 +437,22 @@ padding:0.5em 1.2em 0.5em 1.2em;
   .about{
     height: 50vh;
   }
+  body{
+    overflow-x: hidden;
+  }
   .card{
     margin: 1em 0em;
   }
+  .big-wrapper,.big-wrapper2 {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+}
   div#contactus {
     height: 90vh;
+}
+.hero{
+  background-position:10% 80% ;
 }
 
 .nav{
@@ -480,6 +495,15 @@ padding:0.5em 1.2em 0.5em 1.2em;
     height:50vh;
 
 
+  }
+  .list li::before{
+    content: "▹";
+      position: absolute;
+      width: 5px;
+      left: 5vw !important;
+      color: red;
+      font-size: 14px;
+  
   }
   .project-heading{
     margin: 10vh auto 3vh auto;

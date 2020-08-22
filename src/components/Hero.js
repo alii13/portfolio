@@ -5,11 +5,21 @@ import {FaReact} from 'react-icons/fa'
 import GithubCorner from 'react-github-corner';
 //import Nav from "./Nav"
 import SplitTextJS from 'split-text-js';
+
 function Hero() {
+    const [width1, setWidth1] = React.useState(window.innerWidth);
+    //const [data1, setData1] = React.useState(true);
+React.useEffect(() => {
+   const handleWindowResize = () => setWidth1(window.innerWidth);
+   window.addEventListener("resize", handleWindowResize);
+   return () => window.removeEventListener("resize", handleWindowResize);
+ }, []);
     let overlay =useRef(null);
     let title =useRef(null);
     let bigTitle=useRef(null)
     useEffect(()=>{
+        if(width1>476){
+        
         const t1=gsap.timeline();
         t1
         .to([".child-1",".child-2",".child-3",".child-4",".child-5",".child-6"],{
@@ -33,6 +43,38 @@ function Hero() {
             duration:0.5
 
         },"-=.4")
+    }else{
+      
+        const t1=gsap.timeline();
+        t1
+        .to([".child-1",".child-2",".child-3",".child-4",".child-5",".child-6"],{
+            yPercent:-120,
+            delay:0.4,
+            duration:0.5,
+            stagger:0.2,
+            ease:Power3.easeInOut
+        })
+        .to(".fd",{
+            css:{
+                color:"#fff"
+            },
+            stagger:0.15
+        },"-=1")
+        .fromTo(".hero",
+            {backgroundPosition:"-60% 30%"},{backgroundPosition:"10% 75%"},"-=1")
+        .to(overlay,{
+            yPercent:-120,
+            duration:0.1
+        })
+        .from(title,{
+            y:55,
+            autoAlpha:0,
+            ease:Power3.easeIn,
+            duration:0.5
+
+        },"-=.4")
+
+    }
         
        // console.log(overlay);
     

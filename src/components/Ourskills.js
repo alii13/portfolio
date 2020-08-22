@@ -8,7 +8,15 @@ import gsap from "gsap";
 import { Container,Row,Col,Card,Button } from 'react-bootstrap';
 
 function Ourskills() {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    //const [data, setData] = React.useState(true);
+React.useEffect(() => {
+   const handleWindowResize = () => setWidth(window.innerWidth);
+   window.addEventListener("resize", handleWindowResize);
+   return () => window.removeEventListener("resize", handleWindowResize);
+ }, []);
     useEffect(()=>{
+        if(width>576){
         const z2=gsap.timeline();
         z2
         .from(".left",{
@@ -55,6 +63,53 @@ function Ourskills() {
             },
             stagger:0.2
         },"0.5")
+    }else{
+        const z2=gsap.timeline();
+        z2
+        .from(".left",{
+            ease:"none",
+            xPercent:-30,
+            autoAlpha:0,
+            scrollTrigger:{
+                trigger:".trigger1",
+                end:"center-=20% top",
+                scrub:true,
+            },
+            stagger:0.2
+        })
+        .from(".violet",{
+            ease:"none",
+            scrollTrigger:{
+                trigger:".trigger1",
+                scrub:true,
+            },
+            rotate:450,
+            stagger:0.2
+
+        },"0")
+        .from(".timeline-ic",{
+            ease:"none",
+            scrollTrigger:{
+                trigger:".trigger1",
+                scrub:true,
+            },
+            rotate:720,
+            stagger:0.2
+
+        },"0")
+        .from(".right",{
+            ease:"none",
+            xPercent:35,
+            autoAlpha:0,
+            scrollTrigger:{
+                trigger:".trigger1",
+                end:"center-=20% top",
+                scrub:true,
+            },
+            stagger:0.2
+        },"0.5")
+
+    }
     })
     return (
         <div className="project-section trigger1 " id="skills">
