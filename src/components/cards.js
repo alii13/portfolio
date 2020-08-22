@@ -32,8 +32,8 @@ function cards(props) {
              <Button variant="primary">Go somewhere</Button>
          
          </Card.Body>
-         <footer>
-
+         <footer className="p-2">
+          <p className="m-0 p-0 main-heading"> <span className="text-danger">Javascript </span>| <span className="text-danger">HTML5</span> | <span className="text-danger">CSS</span></p>
          </footer>
          </Card>
     )

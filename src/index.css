@@ -398,6 +398,10 @@ padding:0.5em 1.2em 0.5em 1.2em;
   margin-left: 0 !important;
 
 }
+.main-heading{
+  font-family: 'Anton', sans-serif;
+
+}
 .contact-description{
   max-width: 600px;
   font-size: 16px;
@@ -466,7 +470,7 @@ padding:0.5em 1.2em 0.5em 1.2em;
 }
   
   .project-heading::after {
-    display: none;
+    left:45vw
   }
   .hero-title2{
     position: absolute;

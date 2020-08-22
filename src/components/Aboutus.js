@@ -109,8 +109,9 @@ React.useEffect(() => {
         <div className="project-heading text-left "><h3 className="basic-heading" style={{marginLeft:"0"}}>About Us!</h3></div>
             <Row>
                 <Col sm={12} md={6} lg={6} className="order-1  order-md-0">
-                    <div>
-                        <p ref={(el)=>{p1=el}}className="text-muted text-left">Hello! I'm Ali, a software engineer based in Phagwara, India.</p>
+                    <div className="px-3  px-md-none">
+                    <h3 className="mb-title d-md-none mb-2 mb-md-none">Shekh Aliul</h3>
+                        <p ref={(el)=>{p1=el}}className="text-muted text-left">Hello! I'm <span className="text-danger">Ali</span>, a software engineer based in Phagwara, India.</p>
                         <p ref={(el)=>{p2=el}} className="text-muted text-left">
 Shortly after graduating from Lovely Professional University, I joined the engineering team at Upstatement where I work on a wide variety of interesting and meaningful projects on a daily basis.
 Here are a few technologies I've been working with recently:
@@ -134,7 +135,7 @@ Here are a few technologies I've been working with recently:
 </ul>
                     </div>
                     </Col>
-                    <Col sm={12} md={6} lg={6} className="mobile-margin order-0 order-md-1 mb-5 mb-md-0" >
+                    <Col sm={12} md={6} lg={6} className="mobile-margin order-0 order-md-1 mb-3 mb-md-0" >
                     <div className="big-wrapper">
                         <div className="wrapper-img">
                             <img src={require('../images/ali.jpeg')} alt="ali" className="img-fluid ov" style={{borderRadius:"6px",}} />
@@ -158,8 +159,9 @@ Here are a few technologies I've been working with recently:
 
 
                 <Col sm={12} md={6} lg={6}>
-                    <div>
-                        <p ref={(el)=>{p5=el}} className="text-muted text-left">Hello! I'm <span class="text-danger">Ali</span>, a software engineer based in Phagwara, India.</p>
+                    <div className="px-3  px-md-none">
+                        <h3 className="mb-title d-md-none mb-2 mb-md-none">MR. Doraemon</h3>
+                        <p ref={(el)=>{p5=el}} className="text-muted text-left">Hello! I'm <span class="text-danger">Doraemon</span>, a software engineer based in Phagwara, India.</p>
                         <p ref={(el)=>{p6=el}} className="text-muted text-left">
 Shortly after graduating from Lovely Professional University, I joined the engineering team at Upstatement where I work on a wide variety of interesting and meaningful projects on a daily basis.
 Here are a few technologies I've been working with recently:

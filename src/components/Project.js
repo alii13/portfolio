@@ -35,6 +35,7 @@ function Project() {
         description:"Some quick example text to build on the card title and make up the bulk of the card's content."
         }
     ]
+
     useEffect(()=>{
         const z1= gsap.timeline();
         z1.from(".cd",{
@@ -88,7 +89,7 @@ function Project() {
                     </Col>
                     <Col lg={4}>
                     <div className="cd">
-                    <Cards className="cd" title="Sixth Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards className="cd" title="Sixth Project"   description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                 
