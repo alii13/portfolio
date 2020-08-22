@@ -84,7 +84,7 @@ function Aboutus() {
         <Container  className="project ">
         <div className="project-heading text-left "><h3 className="basic-heading" style={{marginLeft:"0"}}>About Us!</h3></div>
             <Row>
-                <Col sm={12} md={6} lg={6}>
+                <Col sm={12} md={6} lg={6} className="order-1  order-md-0">
                     <div>
                         <p ref={(el)=>{p1=el}}className="text-muted text-left">Hello! I'm Ali, a software engineer based in Phagwara, India.</p>
                         <p ref={(el)=>{p2=el}} className="text-muted text-left">
@@ -110,7 +110,7 @@ Here are a few technologies I've been working with recently:
 </ul>
                     </div>
                     </Col>
-                    <Col sm={12} md={6} lg={6} >
+                    <Col sm={12} md={6} lg={6} className="mobile-margin order-0 order-md-1 mb-5 mb-md-0" >
                     <div className="big-wrapper">
                         <div className="wrapper-img">
                             <img src={require('../images/ali.jpeg')} alt="ali" className="img-fluid ov" style={{borderRadius:"6px",}} />
@@ -123,7 +123,7 @@ Here are a few technologies I've been working with recently:
 
             <Row>
 
-            <Col sm={12} md={6} lg={6} >
+            <Col sm={12} md={6} lg={6} className="mb-5 mb-md-0" >
                     <div className="big-wrapper2">
                         <div className="wrapper-img">
                             <img src={require('../images/rd2.jpg')} alt="ali" className="img-fluid ov" style={{borderRadius:"6px",}} />

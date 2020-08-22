@@ -1,4 +1,4 @@
-import React,{useEffect,useRef} from 'react'
+import React,{useEffect,useRef,useState} from 'react'
 import gsap,{Power3,Power4} from "gsap";
 
 
@@ -6,7 +6,14 @@ function Nav() {
     let topDistanc= useRef(null);
     // 
      console.log(topDistanc);
+    //  const [width, setWidth] = React.useState(window.innerWidth);
+    //  React.useEffect(() => {
+    //     const handleWindowResize = () => setWidth(window.innerWidth);
+    //     window.addEventListener("resize", handleWindowResize);
+    //     return () => window.removeEventListener("resize", handleWindowResize);
+    //   }, []);
     useEffect(()=>{
+    
         const t5=gsap.timeline({delay:1.4});
         t5
         .to([".child-12"],{
@@ -23,11 +30,13 @@ function Nav() {
         .to([".child-15"],{
             x:200
         },1.2)
+    
         
 
     },[])
 
     return (
+        <>
         <div className="nav d-none d-md-flex">
             <ul ref= {(el)=>{topDistanc=el}} className="nav-list">
                 <li className="child-11 butt"><a href="#skills">Our Skills </a></li>
@@ -40,6 +49,7 @@ function Nav() {
         
             
         </div>
+            </>
     )
 }
 

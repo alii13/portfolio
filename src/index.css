@@ -154,10 +154,7 @@ width: 100vw;
 left: 15%;
 top:40%
 }
-.hero-title2{
-  position: absolute;
-  left:45%;
-}
+
 /*
 .hero-title::before{
   content:'\201c';
@@ -409,6 +406,29 @@ padding:0.5em 1.2em 0.5em 1.2em;
 .hero-2{
   height:100vh;
 }
+.App{
+  position: relative;
+}
+.mobile-nav{
+  position: sticky;
+  z-index:1000 !important;
+  top: 0%;
+  height: 7vh;
+  align-items: center;
+  background-color: rgb(21, 21, 19);
+}
+.cd{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.item a{
+  color: white;
+  font-family: 'Anton', sans-serif;
+  /*#61dafb*/
+
+}
 @media (max-width:799px){
   .about{
     height: 50vh;
@@ -416,8 +436,32 @@ padding:0.5em 1.2em 0.5em 1.2em;
   .card{
     margin: 1em 0em;
   }
+  div#contactus {
+    height: 90vh;
+}
+
+.nav{
+  max-width: 100vw;
+}
+.nav-list li{
+  font-size:2vw
+}
+  
   .project-heading::after {
     display: none;
+  }
+  .hero-title2{
+    position: absolute;
+    left:30%;
+    max-width:60vw;
+    text-align: left;
+  }
+  .hero{
+    height:90vh;
+    position: relative;
+    background: url("./images/women.png");
+    background-repeat: no-repeat;
+    background-size: 34% 70%;
   }
   
 .basic-heading,h1{
@@ -449,6 +493,10 @@ padding:0.5em 1.2em 0.5em 1.2em;
   .project-heading{
     margin: 7vh auto;
   }
+  .hero-title2{
+  position: absolute;
+  left:45%;
+}
   .timeline-ic{
     height:5.5em;
     width: 5.5em;

@@ -7,10 +7,13 @@ import Project from "./components/Project"
 import Ourskills from './components/Ourskills';
 import Aboutus from "./components/Aboutus"
 import Contactus from './components/Contactus';
+import Footer from "./components/Footer"
+import MobileNav from './components/MobileNav';
 
 function App() {
   return (
     <div className="App">
+      <MobileNav/>
       <Hero/>
       <Nav/>
       <Work/>
@@ -18,6 +21,7 @@ function App() {
       <Ourskills/>
       <Aboutus/>
       <Contactus/>
+      <Footer/>
 
     </div>
   );

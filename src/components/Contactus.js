@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import { Container } from 'react-bootstrap';
-import Footer from './Footer';
 import gsap from "gsap";
 function Contactus() {
     useEffect(()=>{
@@ -37,7 +36,7 @@ function Contactus() {
         </Container>
         </div>
         </Container>
-        <Footer/>
+
         </div>
     )
 }

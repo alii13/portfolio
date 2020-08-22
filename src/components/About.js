@@ -40,7 +40,7 @@ function About() {
  
     },[])
     return (
-        <div ref={el=>{about=el}}>
+        <div ref={el=>{about=el}} className="d-none d-md-block">
         <div className="container-fluid about wrapperx">
         <div className="panel-ab ">
             <h1 className="about-text">WE <span className="text-danger">DO</span> <GiClockwork className="work-icons"/></h1>

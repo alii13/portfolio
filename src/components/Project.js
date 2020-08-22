@@ -59,17 +59,17 @@ function Project() {
             <Row>
                 <Col lg={4}>
                     <div className="cd">
-                    <Cards  className="cd" title="hello world" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards  className="cd" title="First Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                     <Col lg={4}>
                     <div className="cd">
-                    <Cards className="cd" title="hello world" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards className="cd" title="Second Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                     <Col lg={4}>
                     <div className="cd">
-                    <Cards className="cd" title="hello world" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards className="cd" title="Third Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                 
@@ -78,17 +78,17 @@ function Project() {
             <Row>
                 <Col lg={4}>
                     <div className="cd">
-                    <Cards  title="hello world" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards  title="Fourth Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                     <Col lg={4}>
                     <div className="cd">
-                    <Cards className="cd" title="hello world" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards className="cd" title="Fifth Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                     <Col lg={4}>
                     <div className="cd">
-                    <Cards className="cd" title="hello world" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <Cards className="cd" title="Sixth Project" description="Some quick example text to build on the card title and make up the bulk of the card's content."/>
                     </div>
                     </Col>
                 

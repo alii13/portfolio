@@ -14,6 +14,7 @@ function Hero() {
         t1
         .to([".child-1",".child-2",".child-3",".child-4",".child-5",".child-6"],{
             yPercent:-100,
+            delay:0.4,
             duration:0.5,
             stagger:0.2,
             ease:Power3.easeInOut
@@ -45,12 +46,12 @@ function Hero() {
       //  console.log(textWords)
         t2
         .from(textWords, {duration: 0.6,
-            delay:1, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.07})
+            delay:1, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.07},"+=0.5")
             .to(".SplitTextJS-wrapper:nth-of-type(3)", {
                 css:{
                 color:"#dc3545"
             }
-        },"-=0.6");
+        },"-=0.3");
     
         // .to([".child-11"],{
         //     ease:Power4.easeIn,
