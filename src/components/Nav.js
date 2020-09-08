@@ -39,11 +39,11 @@ function Nav() {
         <>
         <div className="nav d-none d-md-flex">
             <ul ref= {(el)=>{topDistanc=el}} className="nav-list">
-                <li className="child-11 butt"><a href="#skills">Our Skills </a></li>
+                <li className="child-11 butt"><a href="#skills">Skills </a></li>
                 <li className="child-12"><a href="#project">Projects </a></li>
                 <li className="child-13"><a href="#home">Home </a></li>
-                <li className="child-14"><a href="#aboutus">About Us </a></li>
-                <li className="child-15"><a href="#contactus">Contact Us </a></li>
+                <li className="child-14"><a href="#aboutme">About Me </a></li>
+                <li className="child-15"><a href="#contactme">Contact </a></li>
 
             </ul>
         

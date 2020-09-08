@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import {FaReact} from 'react-icons/fa'
 import {GrGatsbyjs} from 'react-icons/gr'
-import {SiKubernetes} from 'react-icons/si'
+import {SiNextDotJs} from 'react-icons/si'
 import {DiJavascript} from 'react-icons/di'
 import gsap from "gsap";
 
@@ -64,47 +64,47 @@ React.useEffect(() => {
             stagger:0.2
         },"0.5")
     }else{
-        const z2=gsap.timeline();
-        z2
-        .from(".left",{
-            ease:"none",
-            xPercent:-20,
-            autoAlpha:0,
-            scrollTrigger:{
-                trigger:".trigger1",
-            },
-            stagger:0.2
-        })
-        .from(".violet",{
-            ease:"none",
-            scrollTrigger:{
-                trigger:".trigger1",
-                scrub:true,
-            },
-            rotate:450,
-            stagger:0.1
+        // const z2=gsap.timeline();
+        // z2
+        // .from(".left",{
+        //     ease:"none",
+        //     xPercent:-20,
+        //     autoAlpha:0,
+        //     scrollTrigger:{
+        //         trigger:".trigger1",
+        //     },
+        //     stagger:0.2
+        // })
+        // .from(".violet",{
+        //     ease:"none",
+        //     scrollTrigger:{
+        //         trigger:".trigger1",
+        //         scrub:true,
+        //     },
+        //     rotate:450,
+        //     stagger:0.1
 
-        },"0")
-        .from(".timeline-ic",{
-            ease:"none",
-            scrollTrigger:{
-                trigger:".trigger1",
-                scrub:true,
+        // },"0")
+        // .from(".timeline-ic",{
+        //     ease:"none",
+        //     scrollTrigger:{
+        //         trigger:".trigger1",
+        //         scrub:true,
                 
-            },
-            rotate:720,
-            stagger:0.1
+        //     },
+        //     rotate:720,
+        //     stagger:0.1
 
-        },"0")
-        .from(".right",{
-            ease:"none",
-            xPercent:20,
-            autoAlpha:0,
-            scrollTrigger:{
-                trigger:".trigger1",
-            },
-            stagger:0.2
-        },"0.3")
+        // },"0")
+        // .from(".right",{
+        //     ease:"none",
+        //     xPercent:20,
+        //     autoAlpha:0,
+        //     scrollTrigger:{
+        //         trigger:".trigger1",
+        //     },
+        //     stagger:0.2
+        // },"0.3")
 
     }
     })
@@ -121,36 +121,36 @@ React.useEffect(() => {
                         <a href="#" class="timeline">
                             <div class="timeline-icon left"><GrGatsbyjs className="timeline-ic violet"/></div>
                             <div class="timeline-content right rrm">
-                                <h3 class="title">Web Designer</h3>
+                                <h3 class="title">Gatsby Js</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                   Learnt gatsby in the lockdown and made familiar with Key concepts of Gatsby js like why it is blazing fast static stie generator
                                 </p>
                             </div>
                         </a>
                         <a href="#" class="timeline">
                             <div class="timeline-icon right "><FaReact className="timeline-ic"/></div>
                             <div class="timeline-content left">
-                                <h3 class="title">Web Developer</h3>
+                                <h3 class="title">React Js</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                    Proficient React developer faimilar with CRA, doing react from past 1.2years made a large variety of websites for clients.
                                 </p>
                             </div>
                         </a>
                         <a href="#" class="timeline">
-                            <div class="timeline-icon left">< SiKubernetes className="timeline-ic"/></div>
+                            <div class="timeline-icon left">< SiNextDotJs className="timeline-ic" style={{color:"black"}}/></div>
                             <div class="timeline-content right rr">
-                                <h3 class="title">Web Designer</h3>
+                                <h3 class="title">Next Js</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                    Learnt Next js in this Lockdown, Grasp a strong grip over the concepts of SSR - Server Side Rendering, Next js routes as well as static functionality.
                                 </p>
                             </div>
                         </a>
                         <a href="#" class="timeline">
                             <div class="timeline-icon right ">< DiJavascript className="timeline-ic text-warning"/></div>
                             <div class="timeline-content left">
-                                <h3 class="title">Web Developer</h3>
+                                <h3 class="title">HTML5, CSS, Javascript, GSAP</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                    Having Strong grasp in HTML5, CSS, Javascript, Bootstrap, Jquery, GSAP, Bulma. Love to build things from scratch and made about 8+ projects using these techs
                                 </p>
                             </div>
                         </a>

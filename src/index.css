@@ -376,7 +376,11 @@ padding:0.5em 1.2em 0.5em 1.2em;
   height: 1.5em !important;
  width: 1.5em !important;
  margin-left:1em;
+ cursor: pointer;
 
+}
+.second-person{
+  display: none !important;
 }
 .card{
   height:100%;
@@ -388,6 +392,7 @@ padding:0.5em 1.2em 0.5em 1.2em;
 }
 .card-body{
   text-align: left !important;
+  min-height:228px !important;
 }
 .card-title{
   font-family: 'Anton', sans-serif;
@@ -430,6 +435,15 @@ padding:0.5em 1.2em 0.5em 1.2em;
   margin: 0;
   padding-left: 0;
   width: 100%;
+  min-height:318px;
+}
+.cdp{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  min-height:318px;
+
 }
 .item .fd{
   color: rgb(21, 21, 19);
@@ -447,6 +461,13 @@ padding:0.5em 1.2em 0.5em 1.2em;
   html{
     
   }
+  .hero-text {
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    /* font-size: 30px; */
+    top: 40%;
+}
   .card{
     margin: 1em 0em;
   }

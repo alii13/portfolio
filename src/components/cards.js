@@ -1,42 +1,44 @@
-import React from 'react'
-import { FaRegFolderOpen } from 'react-icons/fa';
-import {AiFillGithub} from 'react-icons/ai'
-import {FiExternalLink} from 'react-icons/fi'
-import { Card,Button } from 'react-bootstrap';
+import React from "react";
+import { FaRegFolderOpen } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
+import { Card, Button } from "react-bootstrap";
 function cards(props) {
   //  console.log(props);
-    const title=props.title;
-    const description=props.description;
+  const title = props.title;
+  const description = props.description;
   //  console.log(title);
-    return (
+  return (
+    <Card style={{ width: "18rem" }}>
+      <header
+        className="d-flex justify-content-end align-items-center"
+        style={{ height: "50px" }}
+      >
+        <div className="left-header">
+          <FaRegFolderOpen className="react-icons" />
+        </div>
 
-        <Card style={{ width: '18rem' }}>
-        <header className="d-flex justify-content-end align-items-center" style={{height:"50px"}}>
-         <div className="left-header">
-         <FaRegFolderOpen  className="react-icons" />
-         </div>
+        <div className="right-header d-flex justify-content-center  align-items-center">
+          <a href={props.link} style={{color:"black"}}><AiFillGithub className="side-icon" /></a>{" "}
+          <FiExternalLink className="side-icon" />
+        </div>
+      </header>
 
-         <div className="right-header d-flex justify-content-center  align-items-center">
-            <AiFillGithub className="side-icon"/> <FiExternalLink className="side-icon"/>
-         </div>
-
-
-        </header>
-    
-         <Card.Body>
-              
-             <Card.Title className="card-title">{title}</Card.Title>
-             <Card.Text>
-            {description}
-             </Card.Text>
-             <Button variant="primary">Go somewhere</Button>
-         
-         </Card.Body>
-         <footer className="p-2">
-          <p className="m-0 p-0 main-heading"> <span className="text-danger">Javascript </span>| <span className="text-danger">HTML5</span> | <span className="text-danger">CSS</span></p>
-         </footer>
-         </Card>
-    )
+      <Card.Body>
+        <Card.Title className="card-title">{title}</Card.Title>
+        <Card.Text>{description}</Card.Text>
+       <a href={props.demo} ><Button variant="primary">See Demo</Button></a>
+      </Card.Body>
+      <footer className="p-2">
+        <p className="m-0 p-0 main-heading">
+          {" "}
+          <span className="text-danger">{props.one }</span> |{" "}
+          <span className="text-danger">{props.two}</span> | {" "}
+          <span className="text-danger">{props.three}</span>
+        </p>
+      </footer>
+    </Card>
+  );
 }
 
-export default cards
+export default cards;
