@@ -148,7 +148,7 @@ function Project() {
             </div>
           </Col>
           <Col lg={4}>
-            <div className="cdp">
+            <div className="cd">
               <Cards
                 className="cd"
                 title="Apple Site Clone (In Progress)"

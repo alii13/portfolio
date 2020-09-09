@@ -436,6 +436,9 @@ padding:0.5em 1.2em 0.5em 1.2em;
   padding-left: 0;
   width: 100%;
 }
+ul.d-flex.justify-content-between.cd{
+  transform: unset !important;
+}
 .cdp{
   list-style-type: none;
   margin: 0;
@@ -460,6 +463,9 @@ padding:0.5em 1.2em 0.5em 1.2em;
   html{
     
   }
+  footer {
+    margin-top: 20px;
+}
   .hero-text {
     position: absolute;
     width: 80%;
