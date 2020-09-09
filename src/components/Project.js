@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Cards from "./cards";
+import Cards from "./Cards"
 import gsap, { Power2 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";

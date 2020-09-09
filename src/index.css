@@ -453,6 +453,21 @@ ul.d-flex.justify-content-between.cd{
   /*#61dafb*/
 
 }
+.project-card{
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.parent-icon{
+  position: relative;
+}
+.hover{
+  position: absolute;
+  left: 7%;
+  transform: scale(1.1);
+}
+.project-card:hover{
+  transform: scale(1.02);
+}
 @media (max-width:799px){
   .about{
     height: 50vh;
