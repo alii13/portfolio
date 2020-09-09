@@ -8,8 +8,8 @@ function MobileNav() {
                     <li className="item "><a className="fd" href="#skills">Skills </a></li>
                     <li className=" item "><a className="fd" href="#project">Projects </a></li>
                     <li className="item"><a className="fd" href="#home">Home </a></li>
-                    <li className="item"><a className="fd" href="#aboutus">About </a></li>
-                    <li className="item"><a className="fd" href="#contactus">Contact </a></li>
+                    <li className="item"><a className="fd" href="#aboutme">About </a></li>
+                    <li className="item"><a className="fd" href="#contactme">Contact </a></li>
     
                 </ul>
             
