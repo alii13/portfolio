@@ -43,15 +43,7 @@ h1,h2,h4 {
   top: 50%;
   left:15vw;
 }
-.email {
-  position: fixed;
-  left: -3.5vw;
-  transform: rotate(-90deg);
-  bottom: 17vh;
-  z-index: 6000;
-  /* width: 100vw; */
-  /* background: #999; */
-}
+
 
 
 .hero{
@@ -61,6 +53,9 @@ h1,h2,h4 {
   background-repeat: no-repeat;
   background-position: 10% 50%;
   background-size: 32% 80%;
+}
+.line{
+  height:300px !important;
 }
 .wave{
   position: absolute;
@@ -262,15 +257,57 @@ padding:0.5em 1.2em 0.5em 1.2em;
   position: absolute;
   
 }
-
+.wrapperx{
+  overflow: hidden;
+  margin-top: 10vh;
+  height: 100vh;
+  align-items: center;
+}
+.dabbaa{
+  position: relative;
+  height: 80%;
+}
 .panel-ab {
   position: absolute;
-  height: 100%;
   width: -moz-fit-content;
   /* left: 0; */
+
+  /* right: 0; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  width: fit-content;
+  background-color: white;
+  width: 100%;
+}
+.xx{
+  top: 40%;
+  overflow: hidden;
+  height: fit-content;
+  margin-left: 25%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.sv{
+  height: 20px !important;
+  margin:10px 5px;
+  width: 20px !important;
+}
+.panel-ab2 {
+  position: absolute;
+  width: -moz-fit-content;
+  /* left: 0; */
+  /* right: 0; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  width: fit-content;
+  background-color: white;
+  width: 100%;
+}
+.panel-ab3 {
+  position: absolute;
+  width: -moz-fit-content;
+  /* left: 0; */
+
   /* right: 0; */
   /* margin-left: auto; */
   /* margin-right: auto; */
@@ -280,8 +317,10 @@ padding:0.5em 1.2em 0.5em 1.2em;
 }
 
 .about-text{
-  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 0px;
   font-size: 8vw;
+  margin: 0;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -460,6 +499,13 @@ ul.d-flex.justify-content-between.cd{
 .parent-icon{
   position: relative;
 }
+.ct-box{
+  width: 100%;
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+
 .hover{
   position: absolute;
   left: 7%;
@@ -468,6 +514,21 @@ ul.d-flex.justify-content-between.cd{
 .project-card:hover{
   transform: scale(1.02);
 }
+.ics{
+  position: absolute;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+  height: 7em;
+  width: 100%;
+  bottom: 0;
+}
+.ics__images{
+  height: 7vw;
+  margin: 0 1em;
+  width: 7vw;
+}
 @media (max-width:799px){
   .about{
     height: 50vh;
@@ -475,8 +536,24 @@ ul.d-flex.justify-content-between.cd{
   body{
     overflow-x: hidden;
   }
+  .email-wrapper{
+    display: none !important;
+  }
   html{
     
+  }
+  .xbody{
+    margin-top: 4em !important;
+    
+  }
+  .ct-box{
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+  }
+  .ct-box a{
+    margin:0px 0 30px 0 ;
   }
   footer {
     margin-top: 20px;
@@ -720,4 +797,26 @@ ul.d-flex.justify-content-between.cd{
 }
 .hello{
   transform: scale(1.4);
+}
+.wrapperx{
+  height: 100vh;
+ 
+}
+.email::after{
+  content: "";
+  display: block;
+  height: 1px;
+  margin-right:40px;
+  width: 40px;
+
+}
+.email-wrapper{
+  position: absolute;
+  position: fixed;
+  display: flex;;
+  align-items: center;
+  left: -13.5vw;
+  transform: rotate(-90deg);
+  bottom: 17vh;
+  z-index: 6000;
 }

@@ -189,7 +189,7 @@ function Aboutus() {
             <div className="big-wrapper">
               <div className="wrapper-img">
                 <img
-                  src={require("../images/ali.jpeg")}
+                  src={require("../images/ali.jpg")}
                   alt="ali"
                   className="img-fluid ov"
                   style={{ borderRadius: "6px" }}

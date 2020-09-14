@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
+import { saveAs} from 'file-saver';
 import gsap from "gsap";
 function Contactus() {
   useEffect(() => {
@@ -15,6 +16,12 @@ function Contactus() {
       },
     });
   }, []);
+  const saveFile = () => {
+    saveAs(
+     "../images/Shekh_resume.pdf",
+      "AliCV.pdf"
+    );
+  }
 
   return (
     <div className="project-section trigger4 " id="contactme">
@@ -25,7 +32,7 @@ function Contactus() {
               Whats Next!
             </h3>
           </div>
-          <Container className="d-flex justify-content-center dabba h align-items-center">
+          <Container className=" xbody d-flex justify-content-center dabba h align-items-center">
             <div>
               <h1 className=" text-center contact-title ct-1">
                 <span>Get</span> In{" "}
@@ -33,13 +40,14 @@ function Contactus() {
               </h1>
               <br />
               <p className="text-muted contact-description">
-               Currently looking for any new opportunities, my
+               Ready for any new opportunities, my
                 inbox is always open. Whether you have a question or just want
                 to say hi, I'll try my best to get back to you!
               </p>
               <br />
               <br />
-              <a href="https://api.whatsapp.com/send?phone=+917275439042"><div className="btn btn-danger hello" style={{color:"white"}}>Say Hello</div></a>
+             <span className="ct-box"><a href="https://api.whatsapp.com/send?phone=+917275439042"><div className="btn btn-danger hello" style={{color:"white", marginRight:"50px"}}>Say Hello</div></a>
+             <div className="btn btn-danger hello" style={{color:"white"}} onClick={saveFile}>Resume</div></span> 
             </div>
           </Container>
         </div>

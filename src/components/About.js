@@ -10,20 +10,76 @@ function About() {
   gsap.registerPlugin(ScrollTrigger);
   let about = useRef(null);
   useEffect(() => {
-    const t12 = gsap.timeline();
-    t12.to(".panel-ab:not(:last-child)", {
-      yPercent: -100,
-      ease: "none",
-      stagger: 0.5,
-      ease: "none",
+     const t12 = gsap.timeline();
+    // t12.to(".panel-ab", {
+    //   ease: "none",
+    //   stagger: 0.5,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: ".wrapperx",
+    //     start: "top top",
+    //     end: "+=300%",
+    //     scrub: true,
+    //     pin: true,
+    //   },
+    // });
+ 
+    t12.to([".panel-ab"],{
+        ease:"none",
       scrollTrigger: {
+         start:"center-=5% center",
+         end:"center+=55% center",
         trigger: ".wrapperx",
-        start: "top top",
-        end: "+=300%",
+        pin:true,
         scrub: true,
-        pin: true,
       },
-    });
+      duration:2,
+      height:0,
+    })
+    t12.from(".ics__images",{
+      ease:"none",
+      stagger:"0.9",
+      scrollTrigger: {
+         start:"center-=5% center",
+         end:"center+=55% center",
+        trigger: ".wrapperx",
+        scrub: true,
+      },
+      y:300
+
+    })
+    t12.to(".panel-ab3",{
+      ease:"none",
+      scrollTrigger: {
+       trigger: ".wrapperx",
+       start:"center center",
+       end:"bottom center",
+       pin:true,
+       scrub: true,
+     },
+     height:0,
+    },"-=0.3")
+  //   t12.to([".panel-ab3"],{
+  //     ease:"none",
+  //   scrollTrigger: {
+  //     start:"center+=55% center",
+  //     end:"center+=45% center",
+  //     trigger: ".wrapperx",
+  //     pin:true,
+  //     scrub: true,
+  //     markers:true,
+  //   },
+  //   height:0,
+  // })
+  //   t12.to("",{
+  //     ease:"none",
+  //   scrollTrigger: {
+  //     trigger: ".panel-ab2",
+  //     scrub: true,
+  //     pin: true,
+  //   },
+  //   height:0,
+  // })
 
     /*
                         trigger: ".wrapperx",
@@ -34,9 +90,9 @@ function About() {
               pinSpacing:"+=100"
               */
 
-    gsap.set(".panel-ab", {
-      zIndex: (i, target, targets) => targets.length - i,
-    });
+    // gsap.set(".panel-ab", {
+    //   zIndex: (i, target, targets) => targets.length - i,
+    // });
   }, []);
   return (
     <div
@@ -46,24 +102,38 @@ function About() {
       className="d-none d-md-block"
     >
       <div className="container-fluid about wrapperx">
-        <div className="panel-ab ">
+      <div className="dabbaa">
+      <div className="panel-ab2 xx sl-2">
+          <h1 className="about-text">
+          <span className="text-danger">I </span> <span >DO</span><span className="text-danger"> Web</span> Design!{" "}
+            {/* <SiMaterialdesignicons className="beat text-danger" /> */}
+          </h1>
+        </div>
+
+          <div className="panel-ab3 xx sl-1">
+          <h1 className="about-text">
+          I <span className="text-danger">DO</span><span > Web</span> <span className="text-danger">Dev</span>{" "}
+            {/* <SiWebpack className="beat bl" /> */}
+          </h1>
+        </div>
+        
+
+        <div className="panel-ab xx">
           <h1 className="about-text">
             I <span className="text-danger">DO</span>{" "}
-            <GiClockwork className="work-icons" />
+            {/* <GiClockwork className="work-icons" /> */}
           </h1>
+          </div>
+          <div className="ics">
+          <div className="ics__images "><img className="img-fluid" src={require('../images/rjjjj.svg')}/></div>
+          <div className="ics__images "><img className="img-fluid" src={require('../images/gatsby.png')}/></div>
+          <div className="ics__images "><img className="img-fluid" src={require('../images/node.png')}/></div>
+          <div className="ics__images "><img className="img-fluid" src={require('../images/nxx.png')}/></div>
+          <div className="ics__images "><img className="img-fluid" src={require('../images/bootstrap.png')}/></div>
         </div>
-        <div className="panel-ab sl-1">
-          <h1 className="about-text">
-            <span className="text-danger">Web</span>Dev{" "}
-            <SiWebpack className="beat bl" />
-          </h1>
         </div>
-        <div className="panel-ab sl-2">
-          <h1 className="about-text">
-            UI <span className="text-danger">Design</span>{" "}
-            <SiMaterialdesignicons className="beat text-danger" />
-          </h1>
-        </div>
+       
+
         {/* <div className="panel-ab sl-3">
           <h1 className="about-text">
             <span className="text-danger">UI </span>Design{" "}

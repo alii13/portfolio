@@ -23,7 +23,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.cursor{
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  transition-property: background, border, transform;
+  transform-origin: 150% 150%;
+  mix-blend-mode: difference;
+  z-index: 10;
+}
 .App-link {
   color: #61dafb;
 }
