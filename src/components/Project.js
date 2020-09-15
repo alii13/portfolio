@@ -78,7 +78,6 @@ function Project() {
         start:"center-=10% center",
         end:"center-=5% center",
         scrub: true,
-        markers:true,
       },
       y:50,
     })
