@@ -15,6 +15,7 @@ h1,h2,h4 {
 }
 .project-heading{
   position: relative;
+  overflow: hidden;
 }
 .project-heading::before {
   content: 1;
@@ -549,6 +550,8 @@ ul.d-flex.justify-content-between.cd{
   .ct-box{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     flex-direction: column;
   }
@@ -586,10 +589,17 @@ ul.d-flex.justify-content-between.cd{
 .nav-list li{
   font-size:2vw
 }
+.hello{
+  width: 50vw;
+  margin-right: 0 !important;
+}
   
   .project-heading::after {
     left:45vw
   }
+  .social-icons {
+    margin-top: 3em;
+}
   .hero-title2{
     position: absolute;
     left:30%;
@@ -608,6 +618,7 @@ ul.d-flex.justify-content-between.cd{
 
   font-size: 2rem;
   font-weight: 900;
+  overflow: hidden;
   text-transform: uppercase;
 
 }

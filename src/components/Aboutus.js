@@ -19,32 +19,32 @@ function Aboutus() {
   useEffect(() => {
     if (width > 476) {
       //p1
-      gsap.set(p1, { perspective: 400 });
-      const splittedTextp1 = new SplitTextJS(p1);
-      const textWordsp1 = splittedTextp1.words;
+      // gsap.set(p1, { perspective: 400 });
+      // const splittedTextp1 = new SplitTextJS(p1);
+      // const textWordsp1 = splittedTextp1.words;
 
-      //p2
+      // //p2
 
-      // gsap.set(p2, {perspective: 400});
-      // const splittedTextp2 = new SplitTextJS(p2);
-      // const textWordsp2 = splittedTextp2.words;
+      // // gsap.set(p2, {perspective: 400});
+      // // const splittedTextp2 = new SplitTextJS(p2);
+      // // const textWordsp2 = splittedTextp2.words;
 
-      //p3
+      // //p3
 
-      gsap.set(p3, { perspective: 400 });
-      const splittedTextp3 = new SplitTextJS(p3);
-      const textWordsp3 = splittedTextp3.words;
+      // gsap.set(p3, { perspective: 400 });
+      // const splittedTextp3 = new SplitTextJS(p3);
+      // const textWordsp3 = splittedTextp3.words;
 
-      //p4
-      gsap.set(p7, { perspective: 400 });
-      const splittedTextp7 = new SplitTextJS(p7);
-      const textWordsp7 = splittedTextp7.words;
+      // //p4
+      // gsap.set(p7, { perspective: 400 });
+      // const splittedTextp7 = new SplitTextJS(p7);
+      // const textWordsp7 = splittedTextp7.words;
 
-      //p5
+      // //p5
 
-      gsap.set(p5, { perspective: 400 });
-      const splittedTextp5 = new SplitTextJS(p5);
-      const textWordsp5 = splittedTextp5.words;
+      // gsap.set(p5, { perspective: 400 });
+      // const splittedTextp5 = new SplitTextJS(p5);
+      // const textWordsp5 = splittedTextp5.words;
 
       //p6
 
@@ -53,27 +53,26 @@ function Aboutus() {
       // const textWordsp6 = splittedTextp6.words;
 
       const z3 = gsap.timeline();
-      z3.from(
-        [textWordsp1, textWordsp3],
-        {
-          duration: 0.6,
-          opacity: 0,
-          scale: 0,
-          y: 80,
-          scrollTrigger: {
-            trigger: ".trigger2",
-            scrub: -0.5,
-            end: "end top",
-          },
-          rotationX: 180,
-          transformOrigin: "0% 50% -50",
-          ease: "back",
-          stagger: 0.07,
-        },
-        "-0.1"
-      )
-
-        .from(
+      // z3.from(
+      //   [textWordsp1, textWordsp3],
+      //   {
+      //     duration: 0.6,
+      //     opacity: 0,
+      //     scale: 0,
+      //     y: 80,
+      //     scrollTrigger: {
+      //       trigger: ".trigger2",
+      //       scrub: -0.5,
+      //       end: "end top",
+      //     },
+      //     rotationX: 180,
+      //     transformOrigin: "0% 50% -50",
+      //     ease: "back",
+      //     stagger: 0.07,
+      //   },
+      //   "-0.1"
+      // )
+        z3.from(
           ".ov",
           {
             scale: 1.5,
@@ -88,26 +87,26 @@ function Aboutus() {
           "0"
         )
 
-        .from(
-          [textWordsp5, textWordsp7],
-          {
-            duration: 0.6,
-            opacity: 0,
-            scale: 0,
-            y: 80,
-            delay: 2,
-            scrollTrigger: {
-              trigger: ".trigger2",
-              scrub: -0.5,
-              end: "end+=100% top",
-            },
-            rotationX: 180,
-            transformOrigin: "0% 50% -50",
-            ease: "back",
-            stagger: 0.07,
-          },
-          "+=2"
-        );
+        // .from(
+        //   [textWordsp5, textWordsp7],
+        //   {
+        //     duration: 0.6,
+        //     opacity: 0,
+        //     scale: 0,
+        //     y: 80,
+        //     delay: 2,
+        //     scrollTrigger: {
+        //       trigger: ".trigger2",
+        //       scrub: -0.5,
+        //       end: "end+=100% top",
+        //     },
+        //     rotationX: 180,
+        //     transformOrigin: "0% 50% -50",
+        //     ease: "back",
+        //     stagger: 0.07,
+        //   },
+        //   "+=2"
+        // );
     } else {
       const z3 = gsap.timeline();
       z3.from(

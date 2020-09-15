@@ -3,8 +3,11 @@ import { FaRegFolder,FaRegFolderOpen } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { Card, Button } from "react-bootstrap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from "gsap";
 function Cards(props) {
   //  console.log(props);
+  gsap.registerPlugin(ScrollTrigger);
   const title = props.title;
   const description = props.description;
   const [iconParent,setIconParent]=useState(true);

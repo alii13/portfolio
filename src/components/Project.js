@@ -4,6 +4,13 @@ import gsap, { Power2 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 function Project() {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  React.useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+    
+  }, []);
   gsap.registerPlugin(ScrollTrigger);
   const card1 = [
     {
@@ -50,6 +57,7 @@ function Project() {
   ];
 
   useEffect(() => {
+    if (width > 476) {
     const z1 = gsap.timeline();
     z1.from(".cd", {
       duration: 0.4,
@@ -62,7 +70,30 @@ function Project() {
         end: "top+=10% top",
         scrub: true,
       },
-    });
+    })
+    .from(".basic-heading",{
+      ease:Power2.easeInOut,
+      scrollTrigger:{
+        trigger:"project-section",
+        start:"center-=10% center",
+        end:"center-=5% center",
+        scrub: true,
+        markers:true,
+      },
+      y:50,
+    })
+    .from(".project-heading::after",{
+      ease:Power2.easeInOut,
+      scrollTrigger:{
+        trigger:"project-section",
+        start:"center-=10% center",
+        end:"center-=5% center",
+        scrub: true,
+      },
+      width:0,
+
+    })
+  }
   });
 
   return (
