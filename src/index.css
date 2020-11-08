@@ -831,3 +831,28 @@ ul.d-flex.justify-content-between.cd{
   bottom: 17vh;
   z-index: 6000;
 }
+.example-container{
+  z-index:99999999;
+}
+.example-container div {
+/* background: red; */
+  border-radius: 30px;
+  z-index:99999999;
+  display: grid;
+  place-items:center;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+
+}
+
+.example-container .drag-area {
+  opacity: 0;
+  background: white;
+  z-index:99999999;
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  border-radius: 30px;
+
+}

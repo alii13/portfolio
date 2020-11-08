@@ -4,7 +4,9 @@ import { Container } from "react-bootstrap";
 import { FaReact } from "react-icons/fa";
 import GithubCorner from "react-github-corner";
 //import Nav from "./Nav"
+import { motion } from "framer-motion";
 import SplitTextJS from "split-text-js";
+import Dragger from "./Dragger";
 
 function Hero() {
   const [width1, setWidth1] = React.useState(window.innerWidth);
@@ -143,22 +145,7 @@ function Hero() {
       "-=0.3"
     );
 
-    // .to([".child-11"],{
-    //     ease:Power4.easeIn,
-    //     // scrollTrigger:{
-    //     //     trigger:".hero",
-    //     //     start:"bottom bottom",
-    //     //     end:"bottom+=30% bottom",
-    //     //     scrub:true,
-    //     //     markers:true
-    //     // },
 
-    //     y:-550,
-    //     rotate:-90,
-    //     scale:(0.95),
-    //     x:940
-
-    // })
   }, []);
   return (
     <div id="home">
@@ -174,6 +161,9 @@ function Hero() {
         <div className="child-4 item"></div>
         <div className="child-5 item"></div>
         <div className="child-6 item"></div>
+      </div>
+      <div className="example-container">
+        {/* <Dragger /> */}
       </div>
 
       <Container fluid className="hero p-0">
