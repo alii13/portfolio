@@ -32,10 +32,10 @@ function Hero() {
           ".child-6",
         ],
         {
-          yPercent: -100,
+          xPercent: -100,
           delay: 0.4,
           duration: 0.5,
-          stagger: 0.2,
+          stagger: 0.1,
           ease: Power3.easeInOut,
         }
       )
@@ -47,7 +47,7 @@ function Hero() {
           "-=1"
         )
         .to(overlay, {
-          yPercent: -120,
+          xPercent: -120,
           duration: 0.1,
         })
         .from(
@@ -72,7 +72,7 @@ function Hero() {
           ".child-6",
         ],
         {
-          yPercent: -120,
+          xPercent: -120,
           delay: 0.4,
           duration: 0.5,
           stagger: 0.2,
@@ -96,7 +96,7 @@ function Hero() {
           "-=1"
         )
         .to(overlay, {
-          yPercent: -120,
+          xPercent: -120,
           duration: 0.1,
         })
         .from(

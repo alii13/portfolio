@@ -18,7 +18,7 @@ function Contactus() {
   }, []);
   const saveFile = () => {
     saveAs(
-     "../images/Shekh_resume.pdf",
+     "../images/Shekh_Resume.pdf",
       "AliCV.pdf"
     );
   }

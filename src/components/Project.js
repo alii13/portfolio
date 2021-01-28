@@ -106,16 +106,15 @@ function Project() {
             <div className="cd">
               <Cards
                 className="cd"
-                title="WhatsApp Clone"
-                description={`Online Messaging Platform where one can send message to others
-                in blazing fast speed\n
+                title="React Captchaa package"
+                description={`A simple lightweight react component for generating captchas. Published on npm\n
                 
                 `}
                 one="React"
-                two="Redux"
-                three="Firebase"
-                link="https://github.com/alii13/whatsapp-clone"
-                demo="http://whatsapp-clone-fafc9.web.app/"
+                two="npm"
+                three=""
+                link="https://github.com/alii13/react-captchaa"
+                demo="https://alii13.github.io/react-captchaa/"
               />
             </div>
           </Col>
@@ -123,14 +122,13 @@ function Project() {
             <div className="cd">
               <Cards
                 className="cd"
-                title="URL Shortner"
-                description={`A simple Minimal UI based URL shortner for the people who love
-                short urls. Used Firebase database for redirection`}
+                title="Examination Management System"
+                description={`EMS is an examination portal for educational insititutions which will help them to take test & communicate remotely with students in this quarantine period.`}
                 one="React"
-                two="Material UI"
-                three="Firebase"
-                link="https://github.com/alii13/url-shortner-using-reactjs-firebase"
-                demo="https://lazyurl.ninja/"
+                two="Nodejs"
+                three="Antd"
+                link="https://github.com/alii13/examination-management-system"
+                demo="https://ems-in.herokuapp.com/"
               />
             </div>
           </Col>
@@ -138,13 +136,13 @@ function Project() {
             <div className="cd">
               <Cards
                 className="cd"
-                title="Novus"
-                description="React based Minimal , blazing fast website for a client. Intregated detailed google analytics events for users "
+                title="Docs Go"
+                description="A Simple file transfer application that can transfer file up to 8gb b/w two users. (Mobile version still in dev ) "
                 one="React"
-                two="Context Api"
-                three="Firebase"
-                link="https://github.com/alii13/Novus-bootstrap-website"
-                demo="https://myynovus.in"
+                two="Socket.io"
+                three="Nodejs"
+                link="https://github.com/alii13/docsgo"
+                demo="https://docsgo.herokuapp.com/"
               />
             </div>
           </Col>
@@ -153,27 +151,14 @@ function Project() {
           <Col lg={4}>
             <div className="cd">
               <Cards
-                title="Covid19 live meter"
-                description={`This website is used to show live covid 19 info from all across the globe.I have personally made a detailed analysis on india`}
-                one="HTML5"
-                two="Bootstrap"
-                three="Jquery"
-                link="https://github.com/alii13/covid19-live-info"
-                demo="http://covidvirus.epizy.com/"
-              />
-            </div>
-          </Col>
-          <Col lg={4}>
-            <div className="cd">
-              <Cards
                 className="cd"
-                title="Weather App"
-                description={`A simple Minimal app to find the weather of any city within matter of second by making a search`}
+                title="WhatsApp Clone"
+                description={`A full-stack real-time WhatsApp clone using reactjs and firebase`}
                 one="React"
-                two="Bootstrap"
-                three="Weather API"
-                link="https://github.com/alii13/Weatherapp"
-                demo="https://alii13.github.io/Weatherapp/"
+                two="Firebase"
+                three=""
+                link="https://github.com/alii13/whatsapp-clone"
+                demo="https://whatsapp-73989.web.app/"
               />
             </div>
           </Col>
@@ -181,13 +166,13 @@ function Project() {
             <div className="cd">
               <Cards
                 className="cd"
-                title="Apple Site Clone (In Progress)"
-                description="Some quick example text to build on the card title and make up the bulk of the card's content."
+                title="Cheatmcqs"
+                description="This is a tool for downloading MCQs from sanfoundry ( a MCQ questions bank website with content over 10k+ pages ) in a couple of seconds in pdf/txt format."
                 one="HTML5"
-                two="GSAP"
+                two="CSS"
                 three="Javascript"
-                link="https://github.com/alii13/scrollme"
-                demo="https://alii13.github.io/scrollme/"
+                link=""
+                demo="https://www.cheatmcqs.in"
               />
             </div>
           </Col>

@@ -145,7 +145,7 @@ function Aboutus() {
                 }}
                 className="text-muted text-left"
               >
-                Hello! I'm <span className="text-danger">Ali</span>, a aspiring
+                Hello! I'm <span className="text-danger">Ali</span>, a aspiring MERN stack
                 developer based in Phagwara, India.
               </p>
               <p
@@ -154,12 +154,9 @@ function Aboutus() {
                 }}
                 className="text-muted text-left"
               >
-                Currently pursuing CSE from Lovely Professional University, I
-               worked with 3+ organizations  where I work on a
-                wide variety of interesting and meaningful projects on a daily
-                basis. I've been working with
-                recently: JavaScript (ES6+) HTML & (S)CSS React, Gatsby, Node.js,
-                 WordPress, Nextjs, Bootstrap.
+                Currently pursuing B.Tech CSE from Lovely Professional University, I
+                have 1.5+ years of industry experience of developing web applications, SAAS product from scratch.
+                I have strong grasp over frontend, worked with 3+ organizations.
               </p>
               <p
                 ref={(el) => {
@@ -167,15 +164,13 @@ function Aboutus() {
                 }}
                 className="text-muted text-left"
               >
-                Here are a few technologies I've been working with recently:
+                These are the technologies, I have strong command:
               </p>
               <ul className="list text-muted">
-                <li>JavaScript</li>
-                <li>SCSS</li>
+                <li>MongoDB</li>
+                <li>ExpressJs</li>
                 <li>React</li>
-                <li>Gatsby</li>
-                <li>HTML5</li>
-                <li>GSAP</li>
+                <li>Node Js</li>
               </ul>
             </div>
           </Col>

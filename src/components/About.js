@@ -105,14 +105,14 @@ function About() {
       <div className="dabbaa">
       <div className="panel-ab2 xx sl-2">
           <h1 className="about-text">
-          <span className="text-danger">I </span> <span >DO</span><span className="text-danger"> Web</span> Design!{" "}
+          <span className="text-danger">I </span> <span >DO</span><span className="text-danger"> Back</span> End !{" "}
             {/* <SiMaterialdesignicons className="beat text-danger" /> */}
           </h1>
         </div>
 
           <div className="panel-ab3 xx sl-1">
           <h1 className="about-text">
-          I <span className="text-danger">DO</span><span > Web</span> <span className="text-danger">Dev</span>{" "}
+          I <span className="text-danger">DO</span><span > Front</span> <span className="text-danger">End 🎨</span>{" "}
             {/* <SiWebpack className="beat bl" /> */}
           </h1>
         </div>
@@ -125,11 +125,10 @@ function About() {
           </h1>
           </div>
           <div className="ics">
+          <div className="ics__images "><img className="img-fluid" src={require('../images/mongodb.png')}/></div>
+          <div className="ics__images "><img className="img-fluid" src={require('../images/express.png')}/></div>
           <div className="ics__images "><img className="img-fluid" src={require('../images/rjjjj.svg')}/></div>
-          <div className="ics__images "><img className="img-fluid" src={require('../images/gatsby.png')}/></div>
           <div className="ics__images "><img className="img-fluid" src={require('../images/node.png')}/></div>
-          <div className="ics__images "><img className="img-fluid" src={require('../images/nxx.png')}/></div>
-          <div className="ics__images "><img className="img-fluid" src={require('../images/bootstrap.png')}/></div>
         </div>
         </div>
        

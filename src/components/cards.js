@@ -38,14 +38,16 @@ function Cards(props) {
 
         <div className="right-header d-flex justify-content-center  align-items-center">
           <a href={props.link} style={{color:"black"}}><AiFillGithub className="side-icon" /></a>{" "}
-          <FiExternalLink className="side-icon" />
+          <a href={props.demo} style={{color:"black"}}><FiExternalLink className="side-icon" /></a>{" "}
+          
+        
         </div>
       </header>
 
       <Card.Body>
         <Card.Title className="card-title">{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
-       <a href={props.demo} ><Button variant="primary">See Demo</Button></a>
+ 
       </Card.Body>
       <footer className="p-2">
         <p className="m-0 p-0 main-heading">
